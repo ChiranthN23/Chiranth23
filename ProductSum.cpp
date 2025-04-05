@@ -1,15 +1,17 @@
-class Solution {
+class Solution 
+{
     public:
-        int subtractProductAndSum(int n) {
+        int subtractProductAndSum(int n) 
+        {
             int sum=0;
-            int product=1;
+            int prod=1;
             while(n>0)
             {
                 int rem =n%10;
                 sum=sum+rem;
-                product=product*rem;
+                prod=prod*rem;
                 n=n/10;
             }
-            return (product-sum);
+            return (prod-sum);
         }
-    };
+};
