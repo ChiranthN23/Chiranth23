@@ -1,18 +1,18 @@
 class Solution 
 {
 public:
-    bool checkPerfectNumber(int num) 
+    bool checkPerfectNumber(int n) 
     {
-        if (num <= 1) 
+        if (n <= 1) 
         return false;
         int sum = 1;
 
-        for (int i = 2; i * i <= num; i++) 
+        for (int i = 2; i * i <= n; i++) 
         {
-            if (num % i == 0) 
+            if (n % i == 0) 
             {
                 sum = sum + i;
-                int pair = num / i;
+                int pair = n / i;
                 if (i != pair) 
                 { 
                     sum += pair;
@@ -20,6 +20,6 @@ public:
             }
         }
 
-        return sum == num;
+        return sum == n;
     }
 };
