@@ -21,6 +21,6 @@ public:
         }
 
         return sum == n;
-        //returns the sum and thus gives the final answer
+        //gives or returns the sum and thus gives the final answer
     }
 };
