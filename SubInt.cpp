@@ -15,12 +15,12 @@ public:
                 int pair = n / i;
                 if (i != pair) 
                 { 
-                    sum += pair;
+                    sum = sum + pair;
                 }
             }
         }
 
         return sum == n;
-        //Returns the sum and thus gives the final answer.
+        //Returns the sum and thus gives the final answer!!
     }
 };
